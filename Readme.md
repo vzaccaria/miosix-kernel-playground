@@ -33,7 +33,6 @@
   Hint:
   
   ```
-  cd miosix-kernel
   make clean
   git checkout . # Undo all changes eventually made at challenge 3 to get a clean kernel
   patch -p1 < ../demos/serialaos/serialaos.patch
