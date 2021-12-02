@@ -159,8 +159,9 @@ ssize_t SerialAOS::readBlock(void *buffer, size_t size, off_t where)
     while(numchar==0)
     {
         waiting=Thread::IRQgetCurrentThread();
-        waiting->IRQwait();
+        while(waiting)
         {
+            Thread::IRQwait();
             FastInterruptEnableLock eLock(dLock);
             Thread::yield();
         }
