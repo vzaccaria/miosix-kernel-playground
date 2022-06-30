@@ -1,4 +1,5 @@
-**Obsolete: please check the main aos playground repository**
+**Obsolete: please check the main
+[aos playground repository](https://github.com/vzaccaria/aos-playground)**
 
 > A Miosix kernel playground to guide AOS students towards building the Miosix
 > kernel and learning device driver development in an embedded environment.
